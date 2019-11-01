@@ -17,7 +17,9 @@ pipeline {
   }
   stages {
     stage('test') {
-      echo $MOJE
+      steps {
+        echo $MOJE
+      }
     }
   }
 }
