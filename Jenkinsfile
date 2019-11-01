@@ -18,7 +18,7 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        echo $MOJE
+        echo "${MOJE}"
       }
     }
   }
