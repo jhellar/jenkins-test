@@ -9,7 +9,9 @@ def test() {
 }
 
 pipeline {
-  agent 'psi_rhel8'
+  agent {
+    label 'psi_rhel8'
+  }
   environment {
     MOJE = test() 
   }
